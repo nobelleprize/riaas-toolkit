@@ -1,0 +1,110 @@
+<html>
+
+<head>
+<style>
+body {
+    font-family: monospace;
+    margin: 0;
+}
+
+header {
+    font-family: Helvetica;
+    background-color: #629EF4;
+    height: 200px;
+}
+
+header img {
+    width:30px;
+    height:30px;
+}
+
+header p {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+h1 {
+    padding-top: 80px;
+    padding-left: 30px;
+    color: white;
+    font-size: 30px;
+    vertical-align: middle;
+    font-weight: 100;
+} 
+
+label {
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+    clear: left;
+    float: left;
+}
+
+input {
+    display: inline-block;
+    float: left;
+}
+
+#instance, #vpc, #subnet, #zone, #key {
+    margin: 20px;
+}
+
+#token {
+    margin: 20px;
+}
+
+#form-box {
+    font-family: Helvetica;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#submit {
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<article>
+  <header>
+    <h1><a href="index.html"><img src="back button.png"></a><p>Create IP Allocation with Floating IP (US-SOUTH):</p></h1>
+  </header>
+</article>
+
+<form method="post">
+    <div id="form-box">
+        <div id="instance">
+            <label>Instance name: </label><input type="text" name="name" size=40/>
+        </div>
+        <div id="vpc">
+            <label>VPC id:</label><input type="text" name="vpc_id" size=40/>
+        </div>
+        <div id="subnet">
+            <label>Subnet id:</label><input type="text" name="subnet_id" size=40/>
+        </div>
+        <div id="zone">
+            <label>Zone:</label><input type="text" name="zone" size=40 />
+        </div>
+        <div id="key">    
+            <label>Key id:</label><input type="text" name="key_id" size=40/>
+        </div>
+        <div id="token"> 
+            <label>Token:</label><input type="text" name="token" size=40/>
+        </div>
+        <div id="submit">
+            <input type="submit" value="Create" name="call" />
+        </div>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<html>
+
+<head>
+<style>
+html {
+    height:100%; width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+    border-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 90%;
+    height: 100%; width: 100%;
+    background-color: #1D3458;
+}
+
+header {
+    font-family: Helvetica;
+    background-color: #1D3458;
+    height: 20%;
+}
+
+h1 {
+    padding-top: 4%;
+    color: white;
+    font-size: 4em;
+    vertical-align: middle;
+    font-weight: 100;
+    text-align: center;
+} 
+
+.container {
+    text-align: center;
+    font-family: Helvetica;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.row {
+    box-sizing: border-box;
+    border: 2px solid #1D3458;
+    margin-bottom: 30px;
+    background-color: white;
+    
+}
+
+.col1, .col2, .col3 {
+    padding-top: 10px;
+    left: 5px;
+    height: 15%;
+    width: 24%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-right: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.col1:hover, .col2:hover, .col3:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#create-instance {
+    background-color: #1F70C1;
+}
+
+#list-instances {
+    background-color: #FED500;
+}
+
+#delete-instance {
+    background-color: #F44336;
+}
+
+#create-fipal {
+    background-color: #629EF4;
+}
+
+#get-fipal{
+    background-color: #80E27E;
+}
+
+#list-fipals{
+    background-color: #FF7F00;
+}
+
+.type {
+    background-color: rgb(253, 150, 113);
+    color: white;
+    text-align: left;
+    font-size: 2em;
+    padding: 5px 0 5px 30px;
+}
+</style>
+</head>
+
+<body>
+
+<article>
+    <header>
+        <h1>Riaas Toolkit</h1>
+    </header>
+</article>
+
+<div class="container">
+        <div class="row">  
+            <div class="type">Instance</div>
+            <a href="createInstance.html"><div class="col1" id="create-instance">createInstance*</div></a> 
+            <a href="listInstances.html"><div class="col2" id="list-instances">listInstances*</div></a>              
+            <a href="deleteInstance.html"><div class="col3" id="delete-instance">deleteInstances</div></a>             
+        </div>  
+        <div class="row">
+            <div class="type">Fipal</div>
+            <a href="createFipal.html"><div class="col1" id="create-fipal">createFipal</div></a>             
+            <a href="getFipal.html"><div class="col2" id="get-fipal">getFipal</div></a>             
+            <a href="listFipals.html"><div class="col3" id="list-fipals">listFipals</div></a>              
+        </div>  
+</div>  
+</body>
+
+</html>
